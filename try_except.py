@@ -41,16 +41,50 @@
 #  3talikdan 1-masala
 
 # def find_top_three_numbers_sorted(data):
+
 #     natija=[]
 #     for guruh in data:
-#         lst=list(guruh)
-#         tartiblangan=sorted(lst, reverse=True)
-#         tartiblangan=tuple(tartiblangan[:3])
-#         natija.append(tartiblangan)
+#         try:
+#             if type(guruh)==int or type(guruh)==str:
+#                 raise ValueError(f"tuple bo'lishi kerak {guruh}")
+#             else:
+#                 lst=list(guruh)
+#                 tartiblangan=sorted(lst, reverse=True)
+#                 tartiblangan=tuple(tartiblangan[:3])
+#                 natija.append(tartiblangan)
+#         except ValueError as xato:
+#             print(xato)
 #     return natija
 
 
 # data = [(10, 20, 30, 11), (5, 15), (40,), (7, 8, 50, 3)]
 # print(find_top_three_numbers_sorted(data))
 # # Output: [(30, 20, 11), (15, 5), (40,), (50, 8, 7)]
+
+#  3talikdan 4-masala
+
+# def calculate_painting_time(pattern):
+#     vaqt=0
+#     for i in range(len(pattern)):
+#         try:
+#             if type(pattern[i])==int or type(pattern[i])==float:
+#                 raise ValueError("rang str bo'lishi shart!")
+#             else:
+#                 if i==0:
+#                     vaqt+=2
+#                 else:
+#                     if pattern[i]!=pattern[i-1]:
+#                         vaqt+=3
+#                     else:
+#                         vaqt+=2
+
+#         except ValueError as error:
+#             print(error)
+#     return vaqt        
+
+
+
+# pattern = ["Red", "Blue", "Red", "Blue", "Red","Blue","Blue",21] 
+# print(calculate_painting_time(pattern)) 
+# # Output: 14
 
