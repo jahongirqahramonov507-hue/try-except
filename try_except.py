@@ -38,3 +38,19 @@
 # print(ends_with_gram(words))
 # # Output: ['telegram', 'Instagram', 'program', 'diagram']
 
+#  3talikdan 1-masala
+
+# def find_top_three_numbers_sorted(data):
+#     natija=[]
+#     for guruh in data:
+#         lst=list(guruh)
+#         tartiblangan=sorted(lst, reverse=True)
+#         tartiblangan=tuple(tartiblangan[:3])
+#         natija.append(tartiblangan)
+#     return natija
+
+
+# data = [(10, 20, 30, 11), (5, 15), (40,), (7, 8, 50, 3)]
+# print(find_top_three_numbers_sorted(data))
+# # Output: [(30, 20, 11), (15, 5), (40,), (50, 8, 7)]
+
