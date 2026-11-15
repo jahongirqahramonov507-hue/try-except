@@ -88,3 +88,41 @@
 # print(calculate_painting_time(pattern)) 
 # # Output: 14
 
+# 3talikdan 5-masala
+
+# def find_nearest_vowel(letter):
+#     try:
+#         if not "a"<=letter<="z":
+#             raise ValueError("faqat bitta kichik harf kiriting!")
+#         else:
+#             if letter in "aiueo":
+#                 return letter
+#             else:
+#                 lst=[ord(letter)-ord("a"),ord(letter)-ord("u"),ord(letter)-ord("i"),ord(letter)-ord("e"),ord(letter)-ord("o")]
+#                 tartib=sorted(lst, key=lambda x : abs(x))
+#                 natija=chr(ord(letter)-tartib[0])
+#     except ValueError as xato:
+#         print(xato)
+#     return natija
+
+
+# print(find_nearest_vowel("a"))  
+# # Output: i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
